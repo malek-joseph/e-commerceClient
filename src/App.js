@@ -29,7 +29,7 @@ const App = () => {
       <Routes>
         {/* <Route path="/signin" exact component={Signin} /> in React Router v5 */}
         {/* in React Router v6 */}
-        {/* We don't have to use exact anymore in v6 of react-router */}
+        {/* We don't have to use exact anymore in v6 of react-router because react-dom v6 has better alorithm*/}
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/signin" element={<Signin />} />

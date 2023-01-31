@@ -64,9 +64,14 @@ const AdminDashboard = () => {
       <div className="card mb-5">
         <h3 className="card-header">User Information.</h3>
         <ul className="list-group">
-          <li className="list-group-item">{name}</li>
-          <li className="list-group-item">{email}</li>
           <li className="list-group-item">
+            <span className="font-weight-bold">Name: </span> {name}
+          </li>
+          <li className="list-group-item">
+            <span className="font-weight-bold">Email: </span> {email}
+          </li>
+          <li className="list-group-item">
+            <span className="font-weight-bold">Role: </span> 
             {role === 1 ? "admin" : "registered user"}
           </li>
         </ul>
@@ -76,8 +81,8 @@ const AdminDashboard = () => {
 
   return (
     <Layout
-      title="AdminDashboard"
-      description={`G'day ${name}`}
+      title="Adminstrator Dashboard"
+      description={`Hello ${name}`}
       className="container"
     >
       <div className="row">

@@ -23,7 +23,7 @@ const Profile = () => {
   }, []);
 
   const init = () => {
-    console.log(userId); 
+    // console.log(userId); 
     getUserData(userId, token).then((data) => {
       if (data.error) {
         // console.log("error", data); runs with the error 'user not found'
