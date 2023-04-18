@@ -8,7 +8,6 @@ root.render(
   // The best place to put the router is in index js since it will wrap the whole app eventually
   <Router>
     <App />
-    <div>Hi</div>
   </Router>
 );
 

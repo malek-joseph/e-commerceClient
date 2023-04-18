@@ -37,9 +37,14 @@ const Signup = () => {
       // That was one of the cons of then catch of ES6 and what's why we use async await now to handle asyncronous code, it's more readable
       .then((data) => {
         if (data.error) {
-          setUser({ ...user, error: data.error, success: false });
+          // Check if error message contains the string '11000' and 'duplicate key'
+          if (data.error.includes('11000') && data.error.includes('duplicate key')) {
+            setUser({ ...user, error: `This email already exists, maybe try to login`, success: false });
+          } else {
+            setUser({ ...user, error: data.error, success: false });
+          }
         } else {
-          setUser({ ...user, name: "", email: "", password: "" , error:"", success: true});
+          setUser({ ...user, name: '', email: '', password: '', error: '', success: true });
         }
       });
 
