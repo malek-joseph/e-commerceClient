@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import { useNavigate, NavLink, useLocation } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth"; // we ommitted "/index" from /auth/index
 import { itemTotal } from './cartHelpers'
+import '../images/shopping.jpeg'
 
 
 
@@ -39,7 +40,7 @@ const Menu = () => {
  
   return (
     <>
-      <ul className="nav nav-tabs bg-primary">
+      <ul className="nav nav-tabs bg-dark">
         <li className="nav-item">
           <NavLink className="nav-link" style={isActive(location, "/")} to="/">
             Home

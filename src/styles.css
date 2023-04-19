@@ -1,29 +1,29 @@
-
 /* Border Radius */
 .btn, .jumbotron, .nav :hover {
   border-radius: 0px;
 }
+
 /* Product image on card */
 .product-img {
-  min-height: 100px
+  min-height: 100px;
 }
 
 .jumbotron h2 {
-  margin-top: -20px
+  margin-top: -20px;
 } 
+
 @media only screen and (max-width: 600px) {
   .jumbotron h2 {
-    margin-top: 10px
+    margin-top: 10px;
   }
 }
-
 
 /* Jumbotron animation */
 .jumbotron {
     width: 30wh;
     height: 30vh;
     color: #fff;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #3c3c3c, #000);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
@@ -69,38 +69,44 @@
 /* Single product page - product name */
 
 .name {
-    background: indigo;
+    background: #333;
     color: #fff;
     font-weight: bold;
 }
 
 /* black shade form 10-1 */
 .black-10 {
-    background: #f2f2f2;
+    background: #444;
+    color: #fff;
 }
 .black-9 {
-    background: #e6e6e6;
+    background: #333;
+    color: #fff;
 }
 .black-8 {
-    background: #d9d9d9;
+    background: #222;
+    color: #fff;
 }
 .black-7 {
-    background: #cccccc;
+    background: #111;
+    color: #fff;
 }
 .black-6 {
-    background: #bfbfbf;
+    background: #000;
+    color: #fff;
 }
 .black-5 {
-    background: #b3b3b3;
+    background: #000;
+    color: #fff;
 }
 
-
-/* styles to the cart items in the nav menue */
+/* styles to the cart items in the nav menu */
 
 .cart-badge, .cart-badge:hover {
     border-radius: 50%;
     padding: 2px;
     font-size: 12px;
     font-style: italic;
-    background: #000
+    background: #333;
+    color: #fff;
 }
