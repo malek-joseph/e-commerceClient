@@ -33,6 +33,7 @@ const Product = () => {
   const params = useParams();
 
   useEffect(() => {
+    console.log('hi');
     const productId = params.productId;
     loadSingleProduct(productId);
   }, [params]);
